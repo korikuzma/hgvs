@@ -36,9 +36,11 @@ Prerequisites section is from VS Code Dev Containers Tutorial.
 
   The Dev Containers extension lets you run Visual Studio Code inside a Docker container.
 
+  [Marketplace Link](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) (if viewing from browser)
+
 ## Creating the Dev Container
 
-Open the VS Code Command Palette: Shift + Command + P (Mac) / Ctrl + Shift + P (Windows/Linux).
+Open the VS Code Command Palette: Shift + Command + P (Mac) / Ctrl + Shift + P (Windows/Linux)
 
 Type and select the following inside the Command Palette: `> Dev Containers: Rebuild and Reopen in Container`
 
