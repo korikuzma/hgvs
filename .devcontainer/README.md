@@ -8,7 +8,7 @@ Prerequisites section is from VS Code Dev Containers Tutorial.
 
 * [Install VS Code](https://code.visualstudio.com/download)
 
-  * You must be using VS Code to use the Dev Containers
+  You must be using VS Code to use the Dev Containers
 
 * Install Docker
 
