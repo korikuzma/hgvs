@@ -2,11 +2,9 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "biocommons",
-
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
-
-		// Features to add to the dev container. More info: https://containers.dev/features.
+	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {}
@@ -18,7 +16,10 @@
 			]
 		}
 	},
-
+	"containerEnv": {
+		"UTA_DB_URL": "postgresql://anonymous:anonymous@uta.biocommons.org/uta/uta_20180821",
+		"HGVS_SEQREPO_URL": "https://services.genomicmedlab.org/seqrepo"
+	},
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip install --upgrade setuptools && pip install -e .[dev]"
 }

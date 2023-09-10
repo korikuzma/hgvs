@@ -38,6 +38,10 @@ Prerequisites section is from VS Code Dev Containers Tutorial.
 
   [Marketplace Link](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) (if viewing from browser)
 
+## SeqRepo REST and UTA Dependencies
+
+[SeqRepo REST](https://github.com/biocommons/seqrepo-rest-service) and [UTA](https://github.com/biocommons/uta) will point to remote services, as specified by the `containerEnv`. These services are only meant to be used during the hackathon and getting started materials. If using these services for other uses (such as in a production pipeline), we ask that you spin up a separate instance. More information can be found in their respective READMEs.
+
 ## Creating the Dev Container
 
 Open the VS Code Command Palette: Shift + Command + P (Mac) / Ctrl + Shift + P (Windows/Linux)
