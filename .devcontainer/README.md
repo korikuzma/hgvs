@@ -44,14 +44,12 @@ Open the VS Code Command Palette: Shift + Command + P (Mac) / Ctrl + Shift + P (
 
 Type and select the following inside the Command Palette: `> Dev Containers: Rebuild and Reopen in Container`
 
+The Dev Container will be created and install the dependencies needed.
+
 You should see `Dev Container: biocommons @ desktop-linux` on the bottom left hand corner of VS Code.
 
-Install dependencies:
 
-```shell
-pip install --upgrade setuptools
-pip install -e .[dev]
-```
+## Running tests
 
 To run tests:
 

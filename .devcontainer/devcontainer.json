@@ -17,23 +17,8 @@
 				"ms-toolsai.jupyter"
 			]
 		}
-	}
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
-
-	// TODO:
-	// "dockerComposeFile": "../misc/docker-compose.yml",
-	// "service": "uta",
-	// "workspaceFolder": "/workspace"
-  // "shutdownAction": "stopCompose"
+	"postCreateCommand": "pip install --upgrade setuptools && pip install -e .[dev]"
 }
