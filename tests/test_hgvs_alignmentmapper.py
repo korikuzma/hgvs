@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
 import unittest
@@ -14,8 +13,11 @@ import hgvs.location
 import hgvs.parser
 from hgvs.alignmentmapper import AlignmentMapper
 from hgvs.enums import Datum
-from hgvs.exceptions import (HGVSDataNotAvailableError, HGVSError,
-                             HGVSInvalidIntervalError)
+from hgvs.exceptions import (
+    HGVSDataNotAvailableError,
+    HGVSError,
+    HGVSInvalidIntervalError,
+)
 
 
 @pytest.mark.quick
@@ -53,14 +55,14 @@ class Test_AlignmentMapper(unittest.TestCase):
         alt_ac = "NC_000001.10"
         test_cases = [
             {
-                "g": parser.parse_g_interval("(?_152573139)"),
-                "n": parser.parse_n_interval("(?_2)"),
-                "c": parser.parse_c_interval("(?_-69)"),
+                "g": self.parser.parse_g_interval("(?_152573139)"),
+                "n": self.parser.parse_n_interval("(?_2)"),
+                "c": self.parser.parse_c_interval("(?_-69)"),
             },
             {
-                "g": parser.parse_g_interval("(152573138_?)"),
-                "n": parser.parse_n_interval("(1_?)"),
-                "c": parser.parse_c_interval("(-70_?)"),
+                "g": self.parser.parse_g_interval("(152573138_?)"),
+                "n": self.parser.parse_n_interval("(1_?)"),
+                "c": self.parser.parse_c_interval("(-70_?)"),
             },
         ]
         self.run_cases(tx_ac, alt_ac, test_cases)

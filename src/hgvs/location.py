@@ -15,8 +15,7 @@ Classes:
   * :class:`Interval` -- an interval of Positions
 """
 
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 from functools import total_ordering
 
@@ -25,8 +24,7 @@ from bioutils.sequences import aa1_to_aa3
 
 import hgvs
 from hgvs.enums import Datum, ValidationLevel
-from hgvs.exceptions import (HGVSInvalidIntervalError,
-                             HGVSUnsupportedOperationError)
+from hgvs.exceptions import HGVSInvalidIntervalError, HGVSUnsupportedOperationError
 
 
 @attr.s(slots=True, repr=False, cmp=False)
@@ -194,7 +192,7 @@ class BaseOffsetPosition(object):
                     lhs.base - rhs.base == 1 and rhs.offset > 0 and lhs.offset < 0
                 ):
                     raise HGVSUnsupportedOperationError(
-                        "Cannot compare coordinates in the same intron with one based on end of exon and the other based on start of next exon"
+                        "Cannot compare coordinates in the same intron with one based on end of exon and the other based on start of next exon"  # noqa: E501
                     )
                 else:
                     return lhs.base < rhs.base

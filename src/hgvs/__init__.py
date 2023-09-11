@@ -49,8 +49,7 @@ BaseOffsetPosition(base=1582, offset=0, datum=Datum.CDS_START, uncertain=False)
 
 """
 
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import logging
 import re
@@ -78,7 +77,7 @@ try:
     # TODO: match other valid release tags, like .post\d+
     if re.match(r"^\d+\.\d+\.\d+$", __version__) is not None:
         _is_released_version = True
-except pkg_resources.DistributionNotFound as e:
+except pkg_resources.DistributionNotFound:
     warnings.warn("can't get __version__ because %s package isn't installed" % __package__, Warning)
     __version__ = None
 

@@ -4,8 +4,7 @@ genomic (g), non-coding (n), cds (c), and protein (p) coordinates.
 
 """
 
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import logging
 
@@ -15,8 +14,7 @@ from six.moves import range
 import hgvs.intervalmapper
 import hgvs.location
 from hgvs.enums import Datum
-from hgvs.exceptions import (HGVSDataNotAvailableError, HGVSError,
-                             HGVSUsageError)
+from hgvs.exceptions import HGVSDataNotAvailableError, HGVSError, HGVSUsageError
 from hgvs.utils import build_tx_cigar
 
 _logger = logging.getLogger(__name__)
@@ -96,7 +94,7 @@ class TranscriptMapper(object):
 
     def __str__(self):
         return (
-            "{self.__class__.__name__}: {self.tx_ac} ~ {self.alt_ac} ~ {self.alt_aln_method); "
+            "{self.__class__.__name__}: {self.tx_ac} ~ {self.alt_ac} ~ {self.alt_aln_method}; "
             "{strand_pm} strand; {n_exons} exons; offset={self.gc_offset}".format(
                 self=self, n_exons=len(self.tx_exons), strand_pm=strand_int_to_pm(self.strand)
             )
