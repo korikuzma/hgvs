@@ -17,7 +17,7 @@
 		}
 	},
 	"containerEnv": {
-		"UTA_DB_URL": "postgresql://anonymous:anonymous@uta.biocommons.org/uta/uta_20180821",
+		"UTA_DB_URL": "postgresql://anonymous:anonymous@uta.biocommons.org/uta/uta_20210129b",
 		"HGVS_SEQREPO_URL": "https://services.genomicmedlab.org/seqrepo"
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
