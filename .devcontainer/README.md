@@ -50,7 +50,7 @@ Type and select the following inside the Command Palette: `> Dev Containers: Reb
 
 The Dev Container will be created and install the dependencies needed.
 
-You should see `Dev Container: biocommons @ desktop-linux` on the bottom left hand corner of VS Code.
+You should see `Dev Container: biocommons.hgvs @ desktop-linux` on the bottom left hand corner of VS Code.
 
 
 ## Running tests
